@@ -53,14 +53,9 @@ textarea {
     margin: 0 auto;
 }
 
-
 /* -------------- */
-/*---- Styles ----*/
-/* -------------- */
-
-
-
 /* --- Header --- */
+/* -------------- */
 
 .headerTitle {
     background-image: url("./Matte-Watercolor-Textures/9.2.1.jpg");
@@ -120,7 +115,48 @@ textarea {
     color: #b7410e;
 }
 
+/* Header Media queries */
+
+@media (max-width: 930px) {
+    .headerName {
+        position: static;
+        align-items: center;
+        padding-top: 30%;
+    }
+}
+
+@media (max-width: 810px) {
+    .headerName h1 {
+        font-size: 3rem;
+    }
+    .headerName h2 {
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 575px) {
+    .headerName {
+        padding-top:40%;
+    }
+    .headerName h1 {
+        font-size: 2rem;
+        border-bottom: 3px solid #303552;
+        line-height: 3rem;
+    }
+    .headerName h2 {
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+    }
+}
+@media (max-width: 390px) {
+    .headerName h1{
+        border: none;
+        text-align: center;
+    }
+}
+
+/* ---------------------- */
 /* --- about / skills --- */
+/* ---------------------- */
 
 .about,
 .skills {
@@ -144,8 +180,7 @@ textarea {
 .skillsContainer {
     border-radius: 3px;
     box-shadow: 0 0 15px 1px #303552;
-    width: 100%;
-    max-width: 45%;
+    width: 45%;
     min-width: 15%; 
 }
 .aboutContainer {
@@ -210,8 +245,100 @@ li:hover {
     color: #b7410e;
 }
 
+/* About/Skill media queries */
 
+@media (max-width: 1475px) {
+    .aboutContainer,
+    .skillsContainer {
+        width: 55%;
+    }
+}
+
+@media (max-width: 1205px) {
+    .aboutContainer,
+    .skillsContainer {
+        width: 65%;
+    }
+}
+
+@media (max-width: 1030px) {
+    .aboutContainer,
+    .skillsContainer {
+        width: 75%;
+        margin: 0 auto;
+    }
+    .aboutMe {
+        font-size: 1.1rem;
+    }
+    .iconContainer i {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 835px) {
+    .aboutContainer,
+    .skillsContainer {
+        width: 90%;
+    }
+    .iconContainer li {
+        padding: 35px;
+    }
+}
+
+@media (max-width: 690px) {
+    .aboutTitle,
+    .skillsTitle {
+        font-size: 2rem;
+    }
+    .aboutMe {
+        font-size: 0.95rem;
+    }
+    .iconContainer i {
+        font-size: 2.5rem;
+    }
+    .aboutText ,
+    .skillsText {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .aboutMe {
+        line-height: 25px;
+    }
+}
+
+@media (max-width: 415px) {
+    .aboutText,
+    .skillsText {
+        padding: 5px;
+    }
+    .aboutMe {
+        font-size: 0.85rem;
+    }
+    .iconContainer li {
+        padding: 32px;
+    }
+}
+@media (max-width: 370px) {
+    .aboutContainer,
+    .skillsContainer {
+        width: 98%;
+    }
+    .iconContainer li {
+        padding: 30px;
+    }
+}
+@media (max-width: 330px) {
+    .iconContainer li {
+        padding: 27px;
+    }
+}
+
+
+/* ---------------- */
 /* --- projects --- */
+/* ---------------- */
 
 .projects {
     background-image: url("./Matte-Watercolor-Textures/9.2.3.jpg");
@@ -272,6 +399,89 @@ flex-wrap: wrap;
 .project a:hover,
 .project a:visited:hover {
     color: #b7410e;
+}
+
+/* Projects Media queries */
+
+@media (max-width: 1578px) {
+    .project {
+        padding: 10px 0 0 0;
+    }
+    .projectsContainer {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1405px) {
+    .projectsText {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1090px) {
+    .projectsText {
+        flex-direction: column;
+    }
+    .project {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .project p {
+        font-size: 1rem;
+        padding: 5px;
+    }
+    .projectsTitle {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 835px) {
+    .projectsContainer {
+        width: 90%;
+    }
+}
+
+@media (max-width: 700px) {
+    .project h4 {
+        font-size: 1.3rem;
+    }
+    .project p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 510px) {
+    .projectsTitle {
+        font-size: 2rem;
+    }
+    .projects {
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 430px) {
+    .project {
+        width: 99%;
+    }
+    .projectsContainer {
+        width: 99%;
+    }
+    .projectsTitle{
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 350px) {
+    .project h4 {
+        font-size: 1rem;
+    }
+    .projectsTitle {
+        font-size: 1.75rem;
+    }
+    .project a,
+    .project p {
+        font-size: 0.85rem;
+    }
 }
 
 
