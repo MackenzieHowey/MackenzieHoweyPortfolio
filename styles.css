@@ -1,0 +1,377 @@
+/* ------------- */
+/* ----Setup---- */
+/* ------------- */
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+
+/* --- Font Families --- */
+/* font-family: 'Antic Slab', serif; */
+/* font-family: 'Montserrat', sans-serif; */
+
+
+/* Striping and setting defaults */
+
+
+html{
+    font-size: 125%;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+a,
+button {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3,
+h4 {
+    color:#1e2133;
+}
+
+li,
+p,
+input,
+textarea {
+    list-style: none;
+    font-family: 'Antic Slab', serif;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/* -------------- */
+/*---- Styles ----*/
+/* -------------- */
+
+
+
+/* --- Header --- */
+
+.headerTitle {
+    background-image: url("./Matte-Watercolor-Textures/9.2.1.jpg");
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.headerName {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+.headerName h1 {
+    color: #303552;
+    font-weight: 600;
+    border-bottom: 6px solid #303552;
+    font-size: 4rem;
+    line-height: 5.5rem;
+}
+
+.headerName h2 {
+    color: #303552;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 4rem;
+    text-align: center;
+}
+
+.headerArrow {
+    color: #1e2133;
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    font-size: 3.5rem;
+}
+
+.headerArrow:hover{
+    font-size: 3.7rem;
+    color: #b7410e;
+}
+
+.headerHam {
+    color:#1e2133;
+    position:absolute;
+    top: 3%;
+    right: 2%;
+    font-size: 3rem;
+}
+
+.headerHam:hover {
+    color: #b7410e;
+}
+
+/* --- about / skills --- */
+
+.about,
+.skills {
+    background-size: cover;
+    height: 100vh;
+}
+
+.about {
+    background-image: url("./Matte-Watercolor-Textures/9.1.1.jpg");
+    padding-top: 75px;
+}
+
+.skills {
+    background-image: url("./Matte-Watercolor-Textures/9.2.2.jpg");
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.aboutContainer,
+.skillsContainer {
+    border-radius: 3px;
+    box-shadow: 0 0 15px 1px #303552;
+    width: 100%;
+    max-width: 45%;
+    min-width: 15%; 
+}
+.aboutContainer {
+    background-image: url("./Matte-Watercolor-Textures/65%/6t.png");
+    background-size: cover;
+    margin-left: 150px;
+}
+
+.skillsContainer {
+    background-image: url("./Matte-Watercolor-Textures/65%/5t.png");
+    background-size: cover;
+    margin-right: 150px;
+}
+
+.aboutText ,
+.skillsText {
+    padding: 50px;
+}
+
+.aboutTitle,
+.skillsTitle {
+border-bottom: 2px solid #303552;
+font-size: 2.5rem;
+}
+
+.skillsTitle {
+    text-align: right;
+}
+
+.aboutMe {
+    padding-top: 20px;
+    font-size: 1.2rem;
+    letter-spacing: 0.1px;
+    line-height: 34px;
+}
+
+.iconContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.iconContainer li {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 2;
+    flex-shrink: 2;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+    font-weight: bold;
+    color: #1e2133;
+}
+
+.iconContainer i {
+    font-size: 4rem;
+}
+
+.iconContainer i:hover,
+li:hover {
+    color: #b7410e;
+}
+
+
+/* --- projects --- */
+
+.projects {
+    background-image: url("./Matte-Watercolor-Textures/9.2.3.jpg");
+    background-size: cover;
+    height: 100vh;
+    padding-top: 75px;
+}
+
+.projectsContainer {
+    background-image: url("./Matte-Watercolor-Textures/65%/4t.png");
+    background-size: cover;
+    border-radius: 3px;
+    box-shadow: 0 0 15px 1px #303552;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.projectsTitle {
+    font-size: 3rem;
+    text-align: center;
+    border-bottom: 4px solid #1e2133;
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 25px;
+}
+
+.projectsText {
+margin: 0 auto;
+width: 90%;
+display: flex;
+flex-wrap: wrap;
+}
+
+.project {
+    padding: 25px 0 25px;
+    width: calc(100% / 2 - 40px);
+    margin: 20px;
+}
+
+.project h4 {
+    border-bottom: 2px solid #1e2133;
+    font-size: 1.6rem;
+}
+
+.project p {
+    padding: 10px;
+    font-size: 1.2rem;
+    /* color: #C9C4A7; */
+}
+
+.project a,
+.project a:visited {
+    text-decoration: none;
+    padding: 10px;
+    color: #1e2133;
+}
+
+.project a:hover,
+.project a:visited:hover {
+    color: #b7410e;
+}
+
+
+/* --- Contact --- */
+
+.contact {
+    background-image: url("./Matte-Watercolor-Textures/9.2.1.jpg");
+    background-size: cover;
+    height: 100vh;
+    padding-top: 175px;
+}
+
+.contactContainer{
+    background-image: url("./Matte-Watercolor-Textures/65%/4t.png");
+    background-size: cover;
+    border-radius: 3px;
+    box-shadow: 0 0 15px 1px #303552;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.contactWords,
+.contactForm {
+    width: calc(100% / 2 - 60px);
+    margin: 30px;
+}
+
+.contactTitle {
+    font-size: 2.5rem;
+    border-bottom: 2px solid #1e2133;
+}
+
+.contactWords p {
+    padding-top: 20px;
+    font-size: 1.2rem;
+}
+
+.contactForm {
+    padding-top: 60px;
+}
+
+input {
+    margin-bottom: 20px;
+    width: 48%;
+}
+
+textarea {
+    resize: none;
+    width: 97%;
+}
+
+input,
+textarea {
+    border: 1px solid #dad3b8;
+    color: #C4BEA4;
+    background-color: rgba(30, 33, 51, 0.9);
+    padding: 5px;
+    border-radius: 3px;
+}
+
+button {
+    background-color:rgba(30, 33, 51, 0.9);
+    color:#C4BEA4;
+    border: 1px solid #dad3b8;
+    border-radius: 3px;
+    padding: 5px 20px 5px 20px;
+    margin-top: 3px;
+}
+
+button:hover {
+    background-color:#b7410e;
+    color:#1e2133;
+    cursor: pointer;
+}
+
+.contactIcons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contactIcons i,
+.contactIcons a {
+    padding: 20px 40px 20px 0;
+    font-size: 3.5rem;
+    color: #1e2133;
+}
+
+.contactIcons i:hover {
+    color: #b7410e;
+}
+
+/* --- footer --- */
+
+footer{
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#1e2133;
+    color:#C4BEA4;
+}
