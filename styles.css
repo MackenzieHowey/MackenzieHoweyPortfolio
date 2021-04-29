@@ -267,12 +267,6 @@ li:hover {
 }
 
 @media (max-width: 1024px) {
-    @media (max-height: 1366px) {
-        .about,
-        .skills {
-            height: 70vh;
-        }
-    }
     .aboutContainer,
     .skillsContainer {
         width: 85%;
@@ -467,7 +461,7 @@ flex-wrap: wrap;
 
 @media (max-width: 700px) {
     .projects {
-        height: 130vh;
+        height: 135vh;
     }
     .project h4 {
         font-size: 1.2rem;
@@ -639,10 +633,13 @@ button:hover {
         margin: 0 auto;
         padding-top: 10px;
     }
-    .contactIcons i {
-        padding: 0 20px 0;
+    .contactIcons {
+        justify-content: center;
     }
-
+    .contactIcons i,
+    .contactIcons a {
+        padding: 15px 20px;
+    }
 }
 
 @media (max-width: 800px) {
@@ -669,6 +666,10 @@ button:hover {
     }
     .contactForm input {
         width: 97%;
+    }
+    .contactIcons i,
+    .contactIcons a {
+        padding: 10px;
     }
 }
 
