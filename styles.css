@@ -257,12 +257,25 @@ li:hover {
     .skillsContainer {
         width: 55%;
     }
+    .iconContainer li {
+        padding: 35px;
+    }
+}
+
+@media (max-width: 1366px) {
+    .aboutContainer,
+    .skillsContainer {
+        width: 66%;
+    }
+    .iconContainer li {
+        padding: 30px;
+    }
 }
 
 @media (max-width: 1280px) {
     .aboutContainer,
     .skillsContainer {
-        width: 65%;
+        width: 70%;
     }
 }
 
@@ -271,10 +284,6 @@ li:hover {
     .skillsContainer {
         width: 85%;
         margin: 0 auto;
-    }
-
-    .iconContainer li {
-        padding: 30px;
     }
 }
 
