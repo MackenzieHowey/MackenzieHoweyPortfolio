@@ -14,16 +14,25 @@
 <body>
     <header>
         <section class="headerTitle">
-            <div class="headerHam">
-                <i class="fas fa-bars"></i>
+            <div class="hamburgerContainer">
+                <input type="checkbox" id="hamburger" class="hamburger"/>
+                <label class="menuIcon" for="hamburger"><span></span></label>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
             </div>
             <div class="headerName">
                 <h1>Mackenzie Howey</h1>
                 <h2>Front End Web Developer</h2>
             </div>
-            <div class="headerArrow">
+            <a href="#about" aria-label="scroll down to about section" class="headerArrow">
                 <i class="fas fa-chevron-down"></i>
-            </div>
+            </a>
         </section>
     </header>
     <main>
@@ -64,29 +73,29 @@
                         <h4>Delicious</h4>
                         <p>Client PSD conversion from brief. Displays use of SCSS, JS hamburger menu, accessibility and responsive web design. 3 pages (Home, Blog and Contact).</p>
                         <p>| HTML | SCSS | JS |</p>
-                        <a href="https://blissful-heisenberg-f3f472.netlify.app/" target="_blank">Live</a>
-                        <a href="https://github.com/MackenzieHowey/mackenzie_howey_project_one" target="_blank">Repo</a>
+                        <a href="https://blissful-heisenberg-f3f472.netlify.app/" aria-label="live link for Delicious website" target="_blank">Live</a>
+                        <a href="https://github.com/MackenzieHowey/mackenzie_howey_project_one" aria-label="link to delicious github repo" target="_blank">Repo</a>
                     </div>
                     <div class="project P2">
                         <h4>What 2 Eat</h4>
                         <p>A recipe generating app that calls an API to populate recipe card that link directly to a detailed breakdown of the recipe. JS used to dynamically write information related to the user submission.</p>
                         <p>| REST API | CSS | HTML |</p>
-                        <a href="https://whattwoeat.github.io/what2eat/" target="_blank">Live</a>
-                        <a href="https://github.com/whatTwoEat/what2eat" target="_blank">Repo</a>
+                        <a href="https://whattwoeat.github.io/what2eat/" aria-label="live link for What 2 eat website" target="_blank">Live</a>
+                        <a href="https://github.com/whatTwoEat/what2eat" aria-label="link to what 2 eat github repo" target="_blank">Repo</a>
                     </div>
                     <div class="project P3">
                         <h4>My Movie Database</h4>
                         <p>An app to query a movie/tv show API to dynamically display information about the movie or show searched by the user. Option to add or remove a movie or show to a list stored in Firebase.</p>
                         <p>| REST API | CSS | REACT | FIREBASE |</p>
-                        <a href="https://mymoviedatabase.netlify.app/" target="_blank">Live</a>
-                        <a href="https://github.com/MSTRobort/myMovieDatabase" target="_blank">Repo</a>
+                        <a href="https://mymoviedatabase.netlify.app/" aria-label="live link for my movie database website" target="_blank">Live</a>
+                        <a href="https://github.com/MSTRobort/myMovieDatabase" aria-label="link to my movie database github repo" target="_blank">Repo</a>
                     </div>
                     <div class="project P4">
                         <h4>Battle Rockets</h4>
                         <p>Interactive multiplayer Battleship game with rockets based on the SpaceX API. Game logic built with React JS that shares info with Firebase. API call to pull and print info to the page.</p>
                         <p>| REST API | CSS | REACT | FIREBASE |</p>
-                        <a href="https://heuristic-lalande-0093ac.netlify.app/" target="_blank">Live</a>
-                        <a href="https://github.com/Team-Battle-Rockets/Battle-Rockets-Game" target="_blank">Repo</a>
+                        <a href="https://heuristic-lalande-0093ac.netlify.app/" aria-label="live link for battle rockets website" target="_blank">Live</a>
+                        <a href="https://github.com/Team-Battle-Rockets/Battle-Rockets-Game" aria-label="link to battle rockets github repo" target="_blank">Repo</a>
                     </div>
                 </div>
             </div>
@@ -99,8 +108,8 @@
                     <p>You can also send me an email directly:</p>
                     <p>HoweyMackenzie@gmail.com</p>
                     <div class="contactIcons">
-                        <a href="https://github.com/MackenzieHowey" target="_blank"><i class="fab fa-github-square"></i></a>
-                        <a href="https://www.linkedin.com/in/mackenzie-howey-a4299a207/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/MackenzieHowey" aria-label="link to mackenzie howey personal github" target="_blank"><i class="fab fa-github-square"></i></a>
+                        <a href="https://www.linkedin.com/in/mackenzie-howey-a4299a207/" aria-label="link to mackenzie howey linked in page" target="_blank"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
                 <div class="contactForm">
@@ -124,6 +133,5 @@
             <p>Designed and Deployed by Mackenzie Howey</p>
         </div>
     </footer>
-    <script src="./app.js"></script>
 </body>
 </html>
