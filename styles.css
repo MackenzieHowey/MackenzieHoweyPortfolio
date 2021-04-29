@@ -175,7 +175,7 @@ textarea {
 }
 
 .skills {
-    background-image: url("./Matte-Watercolor-Textures/9.2.2.jpg");
+    background-image: url("./Matte-Watercolor-Textures/9.3.1.jpg");
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -294,13 +294,6 @@ li:hover {
     }
 }
 
-@media (max-height: 1024px) {
-    .about,
-    .skills {
-        height: 90vh;
-    }
-}
-
 @media (max-width: 731px) {
     .aboutMe {
         font-size: 1.1rem;
@@ -368,7 +361,7 @@ li:hover {
 /* ---------------- */
 
 .projects {
-    background-image: url("./Matte-Watercolor-Textures/9.2.3.jpg");
+    background-image: url("./Matte-Watercolor-Textures/9.3.2.jpg");
     background-size: cover;
     height: 100vh;
     padding-top: 75px;
