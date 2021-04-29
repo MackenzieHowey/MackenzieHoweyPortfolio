@@ -132,7 +132,11 @@ textarea {
     .headerName h2 {
         font-size: 1.5rem;
     }
+    .headerArrow {
+        left: 45%;
+    }
 }
+
 @media (max-width: 575px) {
     .headerName {
         padding-top:40%;
@@ -147,6 +151,7 @@ textarea {
         line-height: 2.5rem;
     }
 }
+
 @media (max-width: 390px) {
     .headerName h1{
         border: none;
@@ -254,88 +259,103 @@ li:hover {
     }
 }
 
-@media (max-width: 1205px) {
+@media (max-width: 1280px) {
     .aboutContainer,
     .skillsContainer {
         width: 65%;
     }
 }
 
-@media (max-width: 1030px) {
+@media (max-width: 1024px) {
+    @media (max-height: 1366px) {
+        .about,
+        .skills {
+            height: 70vh;
+        }
+    }
     .aboutContainer,
     .skillsContainer {
-        width: 75%;
+        width: 85%;
         margin: 0 auto;
     }
-    .aboutMe {
-        font-size: 1.1rem;
-    }
-    .iconContainer i {
-        font-size: 3rem;
-    }
-}
 
-@media (max-width: 835px) {
-    .aboutContainer,
-    .skillsContainer {
-        width: 90%;
-    }
-    .iconContainer li {
-        padding: 35px;
-    }
-}
-
-@media (max-width: 690px) {
-    .aboutTitle,
-    .skillsTitle {
-        font-size: 2rem;
-    }
-    .aboutMe {
-        font-size: 0.95rem;
-    }
-    .iconContainer i {
-        font-size: 2.5rem;
-    }
-    .aboutText ,
-    .skillsText {
-        padding: 20px;
-    }
-}
-
-@media (max-width: 500px) {
-    .aboutMe {
-        line-height: 25px;
-    }
-    .about {
-        height: 110vh;
-    }
-}
-
-@media (max-width: 415px) {
-    .aboutText,
-    .skillsText {
-        padding: 5px;
-    }
-    .aboutMe {
-        font-size: 0.85rem;
-        padding-top: 5px;
-    }
-    .iconContainer li {
-        padding: 10px;
-    }
-}
-@media (max-width: 370px) {
-    .aboutContainer,
-    .skillsContainer {
-        width: 98%;
-    }
     .iconContainer li {
         padding: 30px;
     }
 }
-@media (max-width: 330px) {
+
+@media (max-width: 820px) {
+    .aboutContainer,
+    .skillsContainer {
+        width: 90%;
+    }
+}
+
+@media (max-height: 1024px) {
+    .about,
+    .skills {
+        height: 90vh;
+    }
+}
+
+@media (max-width: 731px) {
+    .aboutMe {
+        font-size: 1.1rem;
+        line-height: 28px;
+    }
+    .iconContainer i {
+        font-size: 3rem;
+    }
     .iconContainer li {
-        padding: 27px;
+        padding: 25px;
+    }
+}
+
+@media (max-width: 540px) {
+    .skills,
+    .about {
+        height: 120vh;
+    }
+
+    .skillsText,
+    .aboutText {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 411px) {
+    .skills,
+    .about {
+        height: 130vh;
+    }
+    .aboutMe {
+        font-size: 1rem;
+        line-height: 26px;
+    }
+    .iconContainer i {
+        font-size: 2.6rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .skills,
+    .about {
+        height: 140vh;
+    }
+    .aboutTitle ,
+    .skillsTitle {
+        font-size: 2rem;
+    }
+    .skillsText,
+    .aboutText {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 320px) {
+    .skills,
+    .about {
+        height: 175vh;
     }
 }
 
@@ -408,7 +428,7 @@ flex-wrap: wrap;
 
 @media (max-width: 1578px) {
     .project {
-        padding: 10px 0 0 0;
+        padding: 30px 0 0 0;
     }
     .projectsContainer {
         width: 80%;
@@ -419,7 +439,12 @@ flex-wrap: wrap;
     .projectsText {
         width: 100%;
     }
+    .project p {
+        font-size: 1rem;
+        padding: 5px;
+    }
 }
+
 
 @media (max-width: 1090px) {
     .projectsText {
@@ -428,10 +453,6 @@ flex-wrap: wrap;
     .project {
         width: 90%;
         margin: 0 auto;
-    }
-    .project p {
-        font-size: 1rem;
-        padding: 5px;
     }
     .projectsTitle {
         font-size: 2.5rem;
@@ -446,7 +467,7 @@ flex-wrap: wrap;
 
 @media (max-width: 700px) {
     .projects {
-        height: 120vh;
+        height: 130vh;
     }
     .project h4 {
         font-size: 1.2rem;
@@ -468,17 +489,17 @@ flex-wrap: wrap;
 
 @media (max-width: 430px) {
     .project {
-        width: 99%;
+        width: 95%;
     }
     .projectsContainer {
-        width: 99%;
+        width: 90%;
     }
     .projectsTitle{
         padding-top: 5px;
     }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
     .project h4 {
         font-size: 1rem;
     }
@@ -488,6 +509,12 @@ flex-wrap: wrap;
     .project a,
     .project p {
         font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .projects {
+        height: 150vh;
     }
 }
 
@@ -582,6 +609,93 @@ button:hover {
     color: #b7410e;
 }
 
+/* Contact Media Queries */
+
+@media (max-width: 1537px) {
+    .contactWords p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 1308px) {
+    .contactContainer {
+        width: 80%;
+    }
+}
+
+@media(max-width: 1280px ) {
+    .contact {
+        padding-top: 100px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .contactContainer {
+        flex-direction: column;
+    }
+    .contactWords,
+    .contactForm {
+        width: 95%;
+        margin: 0 auto;
+        padding-top: 10px;
+    }
+    .contactIcons i {
+        padding: 0 20px 0;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .contactContainer {
+        width: 90%;
+    }
+}
+
+@media (max-width: 540px) {
+    .contact {
+        height: 145vh;
+    }
+    .contactWords P {
+        font-size: 1rem;
+    }
+    .contactForm form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contactForm button {
+        width: 97%;
+        margin: 6px 0 10px;
+    }
+    .contactForm input {
+        width: 97%;
+    }
+}
+
+@media (max-width: 411px) {
+    .contact {
+        height: 160vh;
+    }
+}
+
+@media (max-width: 375px) {
+    .contact {
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 360px) {
+    .contact {
+        height: 165vh;
+    }
+}
+
+@media (max-width: 320px) {
+    .contact {
+        height: 185vh;
+    }
+}
+
 /* --- footer --- */
 
 footer{
@@ -591,4 +705,19 @@ footer{
     align-items: center;
     background-color:#1e2133;
     color:#C4BEA4;
+}
+
+@media (max-width: 375px) {
+    footer {
+        height: 6vh;
+    }
+    footer p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 320px) {
+    footer p {
+        font-size: 0.7rem;
+    }
 }
