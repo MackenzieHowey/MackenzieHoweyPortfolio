@@ -686,9 +686,9 @@ button:hover {
     }
 }
 
-@media (max-width: 411px) {
+@media (max-width: 420px) {
     .contact {
-        height: 160vh;
+        height: 165vh;
     }
 }
 
